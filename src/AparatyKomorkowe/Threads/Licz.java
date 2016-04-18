@@ -26,11 +26,14 @@ public class Licz extends Thread{
     
 		this.dostep = dostep;
 		
+		
 	}
 
 	@Override
 	public void run()
 	{
+		DataStorage.referencja = this;
+
 		
 		this.zamien();
 		

@@ -1,5 +1,7 @@
 package AparatyKomorkowe;
 
+import AparatyKomorkowe.Threads.Licz;
+
 public class DataStorage {
 
 	public static double TimeMS;
@@ -10,9 +12,9 @@ public class DataStorage {
     public static int BC;
     public static int Times;
     
+    public static Licz referencja;
 
     public static boolean Running = false;
-    
   
     
 

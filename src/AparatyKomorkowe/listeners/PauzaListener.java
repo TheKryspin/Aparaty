@@ -3,37 +3,22 @@ package AparatyKomorkowe.listeners;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import AparatyKomorkowe.DataStorage;
 import AparatyKomorkowe.Threads.Licz;
 
 public class PauzaListener implements MouseListener {
-
-	private int count = 0;
 	
-	private Licz ReferencjaWatku;
-	
-		
-		public PauzaListener(Licz watek)
+		public PauzaListener()
 		{
-		
-		this.ReferencjaWatku = watek;
 		
 		}
 	
-	
-	@SuppressWarnings("deprecation")
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		count ++;
 		
-		if(count%2 == 1){
-			
-			ReferencjaWatku.stop();
-		}
-		if(count %2 == 0)
-		{
-			
-			ReferencjaWatku.start();
-		}
+	DataStorage.referencja.stop();
+	
+	
 	}
 
 	@Override

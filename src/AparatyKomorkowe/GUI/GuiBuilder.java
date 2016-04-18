@@ -54,6 +54,8 @@ public class GuiBuilder {
 				TimeShow = new TextField();
 
 				TimeAnim = new TextField();
+	
+					TimeAnim.setBackground(new Color(141,50,85));
 				
 				TimeShow.setEditable(false);
 					
@@ -77,7 +79,7 @@ public class GuiBuilder {
 						
 						PauzaButton.setPreferredSize(new Dimension(120,60));
 					
-						//PauzaButton.addMouseListener(new PauzaListener(CountListener.getThread()));
+						PauzaButton.addMouseListener(new PauzaListener());
 				
 							Cells = new Cell[11];
 								
